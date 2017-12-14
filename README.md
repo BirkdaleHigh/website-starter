@@ -1,5 +1,5 @@
 # Starter Assets
-#### For Birkdales website module
+For A Birkdale high course website module.
 
 # What to do
 
@@ -20,3 +20,8 @@
 1. use the `cd` command to _change directory_ into your website folder. hint: use `ls` to _list_ the current location and find where you are.
 1. run your site to view it with the command `node server.js`
 1. this command will tell you the site url to visit in your browser.
+
+# Related Topics
+## Sketch[https://birkdalehigh.herokuapp.com/]
+If you have got this far you might have found [sketch.html](/sketch.html).
+There is code for a whole project on this [here online](https://github.com/BirkdaleHigh/sketch)
