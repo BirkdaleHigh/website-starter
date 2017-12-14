@@ -1,10 +1,15 @@
-var express = require('express')
-var app = express()
-var http = require('http').Server(app)
+var liveServer = require("live-server")
 var os = require('os')
 
-app.use( express.static(__dirname) )
+var options = {
+  port: 3000,
+  host: '0.0.0.0',
+  root: __dirname,
+  open: false,
+  logLevel: 2,
+  ignore: '.*/node_modules/.*'
+}
 
-http.listen(3000, '0.0.0.0', function(){
-  console.log(`listening on ${ os.hostname() } at: ${http.address().port}`)
-})
+liveServer.start(options)
+
+console.log(`listening on ${ os.hostname() } at: ${options.port}`)
